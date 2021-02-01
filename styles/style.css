@@ -1,0 +1,136 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    /* removing user-agent spaces */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* navigation and default styles */
+/* removing decoration */
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    margin-left: 10px;
+    text-align: center;
+}
+
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 14px;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited, a:active {
+    color: inherit;
+}
+
+a:focus{
+    outline: none;
+}
+
+a:hover{
+    color: inherit;
+    text-decoration: underline;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation li:last-child {
+    margin-right: 30px;
+}
+
+.navigation li:last-child a {
+    padding: 6px 10px;
+    background-color: rgb(49, 124, 238);
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+    text-decoration: none;
+}
+
+/* main content*/
+.container-main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+img, input {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 270px;
+}
+
+input {
+    width: 600px;
+    height: 48px;
+    border-radius: 50px;
+    border: 1px solid rgb(223, 225, 229);
+    outline: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+}
+
+input:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.container-main .buttons {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-main .buttons button{
+    padding: 10px;
+    background-color: rgb(248, 249, 250);
+    outline: none;
+    border: 1px solid rgb(248, 249, 250);
+    
+}
+
+.container-main .buttons button:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid rgb(218, 220, 224);
+    cursor: pointer;
+}
+/* footer */
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    background-color: rgb(206, 202, 202);
+}
+
+.container-footer li a {
+    padding: 10px;
+    color: rgb(117, 115, 115);
+}
