@@ -1,9 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 html {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 *, *::before, *::after {
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
     /* removing user-agent spaces */
     margin: 0;
     padding: 0;
@@ -11,17 +20,30 @@ html {
 
 body {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 /* navigation and default styles */
 /* removing decoration */
 ul {
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 li {
@@ -75,9 +97,16 @@ a:hover{
 
 /* main content*/
 .container-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 img, input {
@@ -100,13 +129,18 @@ input {
 }
 
 input:hover {
-    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    -webkit-box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
 
 .container-main .buttons {
     width: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .container-main .buttons button{
@@ -118,15 +152,21 @@ input:hover {
 }
 
 .container-main .buttons button:hover {
-    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+            box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
     border: 1px solid rgb(218, 220, 224);
     cursor: pointer;
 }
 /* footer */
 .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
     background-color: rgb(206, 202, 202);
 }
 
